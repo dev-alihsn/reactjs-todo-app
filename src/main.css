@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.App {
+    position: relative;
+    width: 400px;
+    height: 100vh;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+.logo span {
+    color: #333;
+}
+
+.tasks {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.task {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    position: relative;
+    margin: 5px 0;
+}
+
+.add-task-form {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.add-task-form input {
+    padding: 8px;
+    margin-right: 5px;
+    width: 80%;
+}
+
+.add-task-btn {
+    padding: 10px;
+    background-color: darkgoldenrod;
+    color: white;
+    border: none;
+}
+
+.popup {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.popup .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 1;
+}
+
+.popup .content {
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 8px;
+    min-width: 200px;
+    min-height: 120px;
+    position: relative;
+}
+
+.popup .popup-close-btn {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
